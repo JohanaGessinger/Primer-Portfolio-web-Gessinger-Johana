@@ -13,20 +13,60 @@
 
 <body>
     <header>
-       <a href="#"><img class="imghome" src="img usadas/imghome.png" alt="img home"></a>
-       <img class="imgmodooscuro" src="img usadas/icons8-day-and-night-50.png" alt="imgmodooscuro">
+       <a href="#Presentación"><img class="imghome" src="img usadas/imghome.png" alt="img home"></a>
+       <img class="switch" src="img usadas/icons8-day-and-night-50.png" alt="imgmodooscuro">
     </header>
     <nav>
-        <a href="#">Sobre mi</a>
-        <a href="#">Estudios</a>
+        <a href="#sobremi">Sobre mi</a>
+        <a href="#estudios">Estudios</a>
         <a href="#">Proyectos</a>
         <a href="#">Redes</a>
     </nav>
-    <section class="Presentación">
-        <img src="img usadas/fabulous-112.png" alt="">
-        <h1>mi nombre</h1>
-        <img src="img usadas/perfil.png" alt="imgperfil">
+    <section id="Presentación">
+        <img id="imgpresentación" src="img usadas/fabulous-112.png" alt="">
         <p>Bienvenidxs</p>
+        <div class="nombreyperfil">
+            <h1>mi nombre ifooijododo</h1>
+            <img id="imgperfil" src="img usadas/perfil.png" alt="imgperfil">
+        </div>
+    </section>
+
+    <section id="sobremi">
+        <h2>Sobre Mi</h2>
+        <p> Hola!.. Soy Johana y te voy a contar la historia de mi vida (hasta el presente) 
+            Mi nombre completo es Johana Agustina Gessinger, nací un martes 3 de agosto de 1999 en El 
+            Soberbio, Misiones. 
+            De mis primeros años de vida no recuerdo mucho. Junto a mi papá (Selso), mamá (Cleonice) y mis 
+            hermanos/as (Yamila, Marcelo y Camila),Y MI BFF ES UNA PUTA </p>
+    </section>
+
+    <section id="estudios">
+        <h2>Estudios</h2>
+        <ul class="listadeestudios">
+            <div class="cursos">
+                <li>
+                    <p>Diplomatura Desarrollador Web Full-Stack (Uiversidad Tecnológica Nacional)</p>
+                    <p class="encurso">en curso</p>
+                </li>
+                <li>
+                    <p>Curso Introducción a la Programación (Silicon Misiones)</p>
+                    <button type="button" class="btn btn-outline-danger"><a href=""></a>certificado</button>
+                </li>
+            </div>
+            <li class="idiomass">
+                <h3>Idiomas</h3>
+                <div class="listaidomas">
+                    <div class="cadaidioma">
+                        <p>Ingles A1.1 (Centro Universitario de Idiomas)</p>
+                        <p class="encurso">en curso</p>
+                    </div>
+                    <div class="cadaidioma">
+                        <p>Portugues intermedio (autodidacta)</p>
+                        <p class="encurso">en curso</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </section>
     
 </body>
