@@ -149,7 +149,12 @@ h1{
     grid-template-columns: repeat(7,1fr);
     width: 100%;
     height: 619px;
-    background-color: rgb(226, 111, 111);
+    /* background-color: rgb(226, 111, 111); */
+}
+
+#sobremi.dark{
+    background-color: rgb(63, 57, 57);
+
 }
 
 #sobremi h2{
@@ -226,24 +231,207 @@ h1{
 
 .encurso{
     background-color: brown;
-    width: 100px;
-    height: 30px;
+    width: 108px;
+    height: 40px;
     text-align: center;
-    font-size: medium;
-    
+    font-size: large;
+    border: 1px solid black;
 }
 
-.btn{
-background-color: aqua;
+.encurso:hover{
+background-color: rgba(233, 228, 221, 0.74);
+}
+
+button{
+    width: 100px;
+    background-color: brown;
+    }
+
+button a{
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    
+}
+.cursos{
+    display: flex;
+    flex-direction: column;
+}
+
+.cursos li{
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width:653px){
     #estudios{
         font-size: medium;
     }
+    .encurso{
+        width: 99px;
+        height: 30px;
+    }
 }
 /*...................................................proyectos......................................................... */
+#proyectos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 879px;
+    background-color: rgb(207, 98, 108);
+    padding-top: 110px;
+    /* justify-content: space-around; */
+    font-size: x-large;
+}
+
+#proyectos h2{
+    align-self: center;
+    justify-self: center;
+    border-style: double;
+    background-color: rgb(193, 193, 209);
+    width: 75%;
+    text-align: center;
+}
+
+.ambosproyectos{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 60%;
+    justify-content: space-around;
+    margin-top: 7%;
+    
+}
+@media (max-width:808px){
+    .ambosproyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .cadaproyecto{
+        margin-bottom: 20px;
+        }
+}
+
+
+@media (max-width: 540px){    
+   
+        .img-icono{
+            justify-content: end;
+            width: 100%;  
+
+        }
+        .img-icono img{
+            justify-content: end;
+            width: 45%;     
+        }
+        .img-icono a img {
+            justify-content: end;
+            width: 20px;     
+        }
+}
+
+.cadaproyecto{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(143, 112, 170);
+    border: 2px solid rgb(0, 0, 0);
+    width: 50%;
+
+}
+
+@media (min-width: 808px){    
+    .cadaproyecto{
+        width: 40%;
+        }
+} 
+
+.cadaproyecto p{
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: black;
+}
+.img-icono a img{
+    width: 90px;
+}
+.img-icono{
+   display: flex;
+   justify-content: space-around;
+
+   
+
+}
+
+.imgproyecto{
+    /* width: 60%;
+    height: 45%; */
+    object-fit: cover;
+    padding-top: 6px;
+}
 
 
 
+body{
+    background-color: aliceblue;
+}
+body.dark{
+    background-color: black;
+}
+/* ........................................................redes..................................................... */
+#redes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 619px;
+    background-color: rgb(10, 74, 170);
+    padding-top: 90px;
+    justify-content: space-around;
+    font-size: x-large;
+}
 
+#redes h2{
+    align-self: center;
+    justify-self: center;
+    border-style: double;
+    background-color: rgb(193, 193, 209);
+    width: 75%;
+    text-align: center;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li a img{
+    width: 100px;
+}
+
+li a img:hover{
+    transition: 1s;
+}
+
+@media (max-width: 538px){    
+    li a img{
+     width: 70px;
+    }
+} 
+
+footer{
+    width: 100%;
+    background-color: rgb(22, 21, 21);
+    height: 40px;
+    text-align: center;
+    color: aliceblue;
+    font-size: small;
+}
+
+footer img{
+    width: 20px;
+ 
+}
